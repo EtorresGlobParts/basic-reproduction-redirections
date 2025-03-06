@@ -1,0 +1,27 @@
+{
+  "name": "basic-reproduction-redirections",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "15.1.6",
+    "node-cache": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "compression-webpack-plugin": "^11.1.0",
+    "@next/bundle-analyzer": "15.1.6",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "@eslint/eslintrc": "^3"
+  }
+}

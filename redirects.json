@@ -1,0 +1,112 @@
+[
+	{
+		"source": "/wp-content/uploads/2022/10/contractor-offering-guide-for-oct-22.pdf",
+		"destination": "https://gpcmsdev.wpengine.com/wp-content/uploads/2023/12/contractor-offering-guide-for-oct-22.pdf",
+		"permanent": true
+	},
+	{
+		"source": "/meridian-core/",
+		"destination": "/eor-core/",
+		"permanent": true
+	},
+	{
+		"source": "/meridian-prime/",
+		"destination": "/eor-prime/",
+		"permanent": true
+	},
+	{
+		"source": "/meridian-contractor/",
+		"destination": "/contractor/",
+		"permanent": true
+	},
+	{
+		"source": "/meridian-suite/",
+		"destination": "/employment-solutions/",
+		"permanent": true
+	},
+	{
+		"source": "/expand-globally/:path*",
+		"destination": "/employer-of-record-solutions/:path*",
+		"permanent": true
+	},
+	{
+		"source": "/employer-of-record-solutions/hire-globally-eor/",
+		"destination": "/employer-of-record-solutions/hire-globally/",
+		"permanent": true
+	},
+	{
+		"source": "/:path(.*)-/",
+		"destination": "/:path/",
+		"permanent": true
+	},
+	{
+		"source": "/events/2024-global-workforce-trends-apac/",
+		"destination": "/events/",
+		"permanent": true
+	},
+	{
+		"source": "/events/live-demo-of-g-p-meridian-suite-may-10/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	},
+	{
+		"source": "/events/live-demo-of-g-p-meridian-suite-june-21/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	},
+	{
+		"source": "/events/live-demo-of-g-p-meridian-suite-on-august-29/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	},
+	{
+		"source": "/events/pangeo-predictions-by-g-p/",
+		"destination": "/events/",
+		"permanent": true
+	},
+	{
+		"source": "/events/live-demo-of-g-p-meridian-suite-june-7/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	},
+	{
+		"source": "/events/experience-a-live-demo-of-g-p-meridian-suite-on-july-19/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	},
+	{
+		"source": "/events/g-p-meridian-contractor-live-demo-30-nov/",
+		"destination": "/events/",
+		"permanent": true
+	},
+	{
+		"source": "/events/how-prepare-challenges-going-global/",
+		"destination": "/events/",
+		"permanent": true
+	},
+	{
+		"source": "/events/entity-setup-or-eor-discover-the-secret-to-eliminating-global-growth-challenges/",
+		"destination": "/events/",
+		"permanent": true
+	},
+	{
+		"source": "/events/2024-global-workforce-trends-emea/",
+		"destination": "/events/",
+		"permanent": true
+	},
+	{
+		"source": "/events/live-demo-of-g-p-meridian-suite-may-25/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	},
+	{
+		"source": "/events/live-demo-of-g-p-meridian-suite-on-august-9/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	},
+	{
+		"source": "/events/live-demo-of-g-p-meridian-suite-on-july-6/",
+		"destination": "/events/experience-live-demo-meridian-suite/",
+		"permanent": true
+	}
+]
