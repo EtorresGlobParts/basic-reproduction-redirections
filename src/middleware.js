@@ -1,4 +1,4 @@
-import { NextResponse, userAgent } from "next/server";
+import { NextResponse } from "next/server";
 import { hasRedirection } from "./utils/redirects";
 
 const cache = new Map();
