@@ -3,16 +3,19 @@ import getFromWordpress from "./server";
 const testRegex = (redirect, slug) => {
     let dynamicPath;
     // Format the from property to support dynamic urls
-    const from = redirect.from.replace(/\/$/, '').replace(/:([a-zA-Z0-9_]+)(-[a-zA-Z0-9_]+)?/g, (_, name, s="") => {
-        dynamicPath = name;
-        const suffix = s ? `\\${s}` : "";
-        return `(?<${name}>[a-zA-Z0-9_]+)${suffix}`;
-    }).replace(/\//g, "\\/")
-    const test = new RegExp(`${from}`).exec(slug);
+    const from = `${redirect.from.replace(/\/$/, '')
+        .replace(/:([a-zA-Z0-9_]+)(-[a-zA-Z0-9_]+)?/g, (_, name, s = "") => {
+            dynamicPath = name;
+            const suffix = s ? `\\${s}` : "";
+            return `(?<${name}>[a-zA-Z0-9_\\/-]+)${suffix}`;
+        })
+        .replace(/\//g, "\\/")}\\/$`;
 
-    if(test) return { test, dynamicPath };
-    return false
-}
+    const test = new RegExp(from).exec(slug);
+
+    if (test) return { test, dynamicPath };
+    return false;
+};
 
 const isDirectUrl = (path) => {
     try {
@@ -77,7 +80,7 @@ export const hasRedirection = async (slug, locale = "") => {
     
                 return {
                     redirect: {
-                        destination: `/${(locale !== "en" ? locale : "")}${direction}`,
+                        destination: `${(locale !== "en" ? `/${locale}` : "")}${direction}`,
                         permanent: match.is_permanent || false,
                     },
                 };
