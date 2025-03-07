@@ -7,12 +7,7 @@ export default function Template(data) {
 
 export async function getStaticPaths() {
     // No need to prerender all paths in development
-    if (process.env.VERCEL_ENV !== "production") {
-        return { paths: [], fallback: "blocking" };
-    }
-
-    const data = await getFromWordpress(`together/paths`);
-    return { paths: data, fallback: "blocking" };
+    return { paths: [], fallback: "blocking" };
 }
 
 export async function getStaticProps(ctx) {
@@ -20,7 +15,7 @@ export async function getStaticProps(ctx) {
 
     let slug = typeof params.slug !== "string" ? `/${params.slug.join("/")}` : params.slug;
     const [page, options] = await Promise.all([getFromWordpress(`together/post?slug=${slug}`), getFromWordpress(`together/options`)]);
-  
+
     return {
         props: {
             page,
